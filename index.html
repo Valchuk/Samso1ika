@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div class="user-form">
+		<div class="user-form__inputs">
+			<label data-name="firstName">
+				<input type="text" placeholder="First name" name="firstName">
+			</label>
+			<label data-name="lastName">
+				<input type="text" placeholder="Last name" name="lastName">
+			</label>
+			<label data-name="email">
+				<input type="email" placeholder="Email" name="email">
+			</label>
+			<label>
+				<select name="gender" id="gender">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+					<option value="Other">Other</option>
+				</select>
+			</label>
+			<button id="button" onclick="newTable.addUser()">Add user</button>
+		</div>
+		
+		<div class="user-form__search">
+			<label>
+				<input type="text" placeholder="Search by name" id="search">
+			</label>
+		</div>
+	</div>
+
+	<div class="user-form__table">
+		<table style="display: none">
+			<thead class="thead-dark">
+			    <tr>
+			      <th scope="col">Name</th>
+			      <th scope="col">Email</th>
+			      <th scope="col">Gender</th>
+			    </tr>
+			  </thead>
+			   <tbody>
+		   </tbody>
+		</table>
+	</div>
+	
+	<script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
